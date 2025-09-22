@@ -12,4 +12,4 @@ jobs:
       issues: read
     steps:
       - uses: actions/checkout@v3
-      - uses: GitHubSecurityLab/action-permissions@v1
+      - uses: GitHubSecurityLab/action-permissions/advisor@v1
