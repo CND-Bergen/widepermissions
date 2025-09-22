@@ -11,5 +11,7 @@ jobs:
       id-token: write
       issues: read
     steps:
+      - uses: GitHubSecurityLab/actions-permissions/monitor@v1
+        with:
+          config: ${{ vars.PERMISSIONS_CONFIG }}
       - uses: actions/checkout@v3
-      - uses: GitHubSecurityLab/actions-permissions/advisor@v1
